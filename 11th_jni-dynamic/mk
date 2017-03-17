@@ -1,0 +1,4 @@
+gcc -I/usr/lib/jvm/java-8-openjdk-amd64/include/ -I/usr/lib/jvm/java-8-openjdk-amd64/include/linux/ -fPIC --share sdtest.c -o libsdtest.so
+javac Sdtest.java
+export LD_LIBRARY_PATH=.
+java Sdtest
